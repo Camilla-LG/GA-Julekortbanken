@@ -2,11 +2,11 @@
 {
     internal class Program
     {
-        public List<Julekort> Cards {  get; set; }  
-
+        public List<XmasCard> Cards {  get; set; }
+        XmasCard xmasCard = new XmasCard("", "", "");
         public Program()
         {
-            Cards = new List<Julekort>();
+            Cards = new List<XmasCard>();
         }    
 
         static void Main()
