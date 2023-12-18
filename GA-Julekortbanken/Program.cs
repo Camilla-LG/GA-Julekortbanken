@@ -2,9 +2,16 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public List<Julekort> Cards {  get; set; }  
+
+        public Program()
         {
-            Console.WriteLine("Hello, World!");
+            Cards = new List<Julekort>();
+        }    
+
+        static void Main()
+        {
+
         }
     }
 }
