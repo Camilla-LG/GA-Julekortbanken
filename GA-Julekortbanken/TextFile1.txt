@@ -1,0 +1,26 @@
+﻿
+Julekortbanken
+Gratulerer!
+Du har blitt ansatt som juniorutvikler ved nissen sitt verksted med oppgaven å lage en konsollapplikasjon for å administrere
+julekortbanken. I dette festlige prosjektet ønsker nissen å effektivisere prosessen med å lage og lagre digitale julekort 
+for familier over hele verden. Nordpolen trenger en måte å organisere og tilpasse disse hilsenene på en effektiv måte.
+
+Oversikt over oppgaven:
+Som utvikler i nisseverkstedet er din oppgave å lage en konsollapplikasjon i C#, som lar alvene administrere Julekortbanken.
+Applikasjonen skal tillate brukerne å legge til, vise, redigere og slette digitale julekort, hver tilpasset med personlige 
+meldinger og festlige design.
+
+Funksjonalitet å inkludere:
+Legg til et kort: Alvene skal kunne legge inn detaljer som mottakerens navn, avsenderens navn, en personlig melding og velge
+blant et utvalg festlige design for kortet.
+Vis kort: Vise en liste over alle lagrede kort, inkludert deres detaljer.
+Rediger kort: Mulighet til å endre kortdetaljer eller meldinger.
+Slett kort: Mulighet for å fjerne kort fra banken.
+Søk etter kort: Implementer en søkefunksjon som lar alvene finne kort etter mottakerens navn eller avsenderens navn.
+
+
+Ekstra funksjoner (valgfritt):
+Implementer fargevalg eller ASCII-kunst for festlige design.
+Inkluder validering for å sikre at kortdetaljer blir skrevet inn korrekt.
+Muliggjør sortering av kort etter mottakerens navn eller opprettelsesdato.
+ 
