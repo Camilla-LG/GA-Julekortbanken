@@ -12,13 +12,13 @@ namespace GA_Julekortbanken
             Designs = InitializeDesigns();
         }
 
-        private List<Design> InitializeDesigns()
+        public List<Design> InitializeDesigns()
         {
             return new List<Design> {
-                new Design ("Santa Design"),
-                new Design ("Rudolph Design"),
-                new Design ("Christmas Tree Design"),
-                new Design ("Gift Design"),
+                new Design ("Santa Design", "🎅"),
+                new Design ("Rudolph Design", "\U0001f98c"),
+                new Design ("Christmas Tree Design", "🎄"),
+                new Design ("Gift Design", "🎁"),
             };
         }
 

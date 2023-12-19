@@ -10,18 +10,22 @@ namespace GA_Julekortbanken
     {
         XmasCard xmasCard = new XmasCard("", "", "", "");
 
-        public string DesignName { get; set; } 
+        public string DesignName { get; set; }
+        public string DesignEmoji { get; set; } 
        
-        public Design(string designName)
+        public Design(string designName, string designEmoji)
         { 
             DesignName = designName;
+            DesignEmoji = designEmoji;
         }
 
-        public void SantaDesign()
+        public void PrintDesign(XmasCard xmasCard)
         {
+            Program program = new Program();
+
             Console.WriteLine(" ╔══════════════════════════════╗");
             Console.WriteLine(" ║                              ║");
-            Console.WriteLine(" ║              🎅              ║");
+            Console.WriteLine($"║        {DesignEmoji}         ║");
             Console.WriteLine(" ║                              ║");
             Console.WriteLine($"║    {xmasCard.ToName}         ║");
             Console.WriteLine($"║    {xmasCard.Greeting}       ║");
@@ -31,46 +35,47 @@ namespace GA_Julekortbanken
             Console.WriteLine(" ╚══════════════════════════════╝");
         }
 
-        public void RudolphDesign()
-        {
-            Console.WriteLine(" ╔══════════════════════════════╗");
-            Console.WriteLine(" ║                              ║");
-            Console.WriteLine(" ║              🦌              ║");
-            Console.WriteLine(" ║                              ║");
-            Console.WriteLine($"║    {xmasCard.ToName}         ║");
-            Console.WriteLine($"║    {xmasCard.Greeting}       ║");
-            Console.WriteLine($"║    {xmasCard.FromName}       ║");
-            Console.WriteLine(" ║                              ║");
-            Console.WriteLine(" ║                              ║");
-            Console.WriteLine(" ╚══════════════════════════════╝");
-        }
 
-        public void XmasTreeDesign()
-        {
-            Console.WriteLine(" ╔══════════════════════════════╗");
-            Console.WriteLine(" ║                              ║");
-            Console.WriteLine(" ║              🎄              ║");
-            Console.WriteLine(" ║                              ║");
-            Console.WriteLine($"║    {xmasCard.ToName}         ║");
-            Console.WriteLine($"║    {xmasCard.Greeting}       ║");
-            Console.WriteLine($"║    {xmasCard.FromName}       ║");
-            Console.WriteLine(" ║                              ║");
-            Console.WriteLine(" ║                              ║");
-            Console.WriteLine(" ╚══════════════════════════════╝");
-        }
+        //public void RudolphDesign()
+        //{
+        //    Console.WriteLine(" ╔══════════════════════════════╗");
+        //    Console.WriteLine(" ║                              ║");
+        //    Console.WriteLine(" ║              🦌              ║");
+        //    Console.WriteLine(" ║                              ║");
+        //    Console.WriteLine($"║    {xmasCard.ToName}         ║");
+        //    Console.WriteLine($"║    {xmasCard.Greeting}       ║");
+        //    Console.WriteLine($"║    {xmasCard.FromName}       ║");
+        //    Console.WriteLine(" ║                              ║");
+        //    Console.WriteLine(" ║                              ║");
+        //    Console.WriteLine(" ╚══════════════════════════════╝");
+        //}
 
-        public void GiftDesign()
-        {
-            Console.WriteLine(" ╔══════════════════════════════╗");
-            Console.WriteLine(" ║                              ║");
-            Console.WriteLine(" ║              🎁              ║");
-            Console.WriteLine(" ║                              ║");
-            Console.WriteLine($"║    {xmasCard.ToName}         ║");
-            Console.WriteLine($"║    {xmasCard.Greeting}       ║");
-            Console.WriteLine($"║    {xmasCard.FromName}       ║");
-            Console.WriteLine(" ║                              ║");
-            Console.WriteLine(" ║                              ║");
-            Console.WriteLine(" ╚══════════════════════════════╝");
-        }
+        //public void XmasTreeDesign()
+        //{
+        //    Console.WriteLine(" ╔══════════════════════════════╗");
+        //    Console.WriteLine(" ║                              ║");
+        //    Console.WriteLine(" ║              🎄              ║");
+        //    Console.WriteLine(" ║                              ║");
+        //    Console.WriteLine($"║    {xmasCard.ToName}         ║");
+        //    Console.WriteLine($"║    {xmasCard.Greeting}       ║");
+        //    Console.WriteLine($"║    {xmasCard.FromName}       ║");
+        //    Console.WriteLine(" ║                              ║");
+        //    Console.WriteLine(" ║                              ║");
+        //    Console.WriteLine(" ╚══════════════════════════════╝");
+        //}
+
+        //public void GiftDesign()
+        //{
+        //    Console.WriteLine(" ╔══════════════════════════════╗");
+        //    Console.WriteLine(" ║                              ║");
+        //    Console.WriteLine(" ║              🎁              ║");
+        //    Console.WriteLine(" ║                              ║");
+        //    Console.WriteLine($"║    {xmasCard.ToName}         ║");
+        //    Console.WriteLine($"║    {xmasCard.Greeting}       ║");
+        //    Console.WriteLine($"║    {xmasCard.FromName}       ║");
+        //    Console.WriteLine(" ║                              ║");
+        //    Console.WriteLine(" ║                              ║");
+        //    Console.WriteLine(" ╚══════════════════════════════╝");
+        //}
     }
 }
