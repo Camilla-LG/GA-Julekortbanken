@@ -9,8 +9,19 @@ namespace GA_Julekortbanken
         public Program()
         {
             Cards = new List<XmasCard>();
-            Designs = new List<Design>();
-        }    
+            Designs = InitializeDesigns();
+        }
+
+        private List<Design> InitializeDesigns()
+        {
+            return new List<Design> {
+                new Design ("Santa Design"),
+                new Design ("Rudolph Design"),
+                new Design ("Christmas Tree Design"),
+                new Design ("Gift Design"),
+            };
+        }
+
         static void Main()
         {
             bool RunProgram = true;

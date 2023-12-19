@@ -8,7 +8,6 @@ namespace GA_Julekortbanken
 {
     public class XmasCard
     {
-        Program program = new Program();
 
         public string ToName {  get; set; }
         public string FromName { get; set; }
@@ -23,9 +22,9 @@ namespace GA_Julekortbanken
             Design = design;
         }
 
-
         public void ShowCards()
         {
+        Program program = new Program();
             int cardNumber = 1;
 
             foreach (var card in program.Cards)
@@ -40,6 +39,7 @@ namespace GA_Julekortbanken
 
         public void AddCard()
         {
+            Program program = new Program();
             Console.WriteLine("Hva slags design vil du ha på julekortet?");
             var designIndex = CardDesign();
             var designChoice = program.Designs[designIndex].DesignName;
