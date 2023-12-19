@@ -5,14 +5,16 @@ namespace GA_Julekortbanken
     public class Program
     {
         public List<XmasCard> Cards {  get; set; }
+        public List<Design> Designs { get; set; }
         public Program()
         {
             Cards = new List<XmasCard>();
+            Designs = new List<Design>();
         }    
         static void Main()
         {
             bool RunProgram = true;
-            XmasCard xmasCard = new XmasCard("", "", "");
+            XmasCard xmasCard = new XmasCard("", "", "", "");
 
             Console.WriteLine();
             Console.WriteLine(" *** JULEKORTBANKEN *** ");
